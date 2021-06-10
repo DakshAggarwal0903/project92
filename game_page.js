@@ -14,7 +14,7 @@ function send(){
 }
 function check(){
     get_answer= document.getElementById("input_check_box").value;
-    if (get_answer==actual_answer){
+    if (get_answer==actualAnswer){
         
          if(Aturn="Player1"){
              update_player1_score= player1_score+1
@@ -26,11 +26,11 @@ function check(){
          }
      if(Qturn=="Player1"){
          Qturn="Player2"
-         document.getElementById("player_question").innerHTML="Question turn -"+localStorage.getItem(Username2);
+         document.getElementById("player_question").innerHTML="Question turn -"+localStorage.getItem("Player_1_Username");
      }
      else{
          Qturn="Player1";
-         document.getElementById("player_question").innerHTML="Question turn-"+localStorage.getItem(Username1);
+         document.getElementById("player_question").innerHTML="Question turn-"+localStorage.getItem("Player_2_Username");
      }
 
          
